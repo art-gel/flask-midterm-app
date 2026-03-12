@@ -10,5 +10,9 @@ def home():
 def recipe():
     return render_template("recipe.html")
 
+@app.route("/notes")
+def notes():
+    return render_template("notes.html")
+
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=8080)
